@@ -1,0 +1,4 @@
+<%= simple_form_for [@article, @comment] do |f| %>
+ <%= f.input :text %>
+ <%= f.submit "Submit Comment", class: "btn btn-primary" %>
+<% end %>

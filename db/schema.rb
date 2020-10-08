@@ -31,3 +31,6 @@ ActiveRecord::Schema.define(version: 2020_10_06_202850) do
 
   add_foreign_key "comments", "articles"
 end
+
+
+rails generate model Comment text:string article:references
