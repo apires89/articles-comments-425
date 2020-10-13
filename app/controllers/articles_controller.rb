@@ -3,7 +3,11 @@ class ArticlesController < ApplicationController
 
   # GET /articles
   def index
-    @articles = Article.all
+    if params[:index].present?
+      @articles = []
+    else
+     @articles = Article.all
+   end
   end
 
   # GET /articles/1
@@ -62,6 +66,6 @@ class ArticlesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def article_params
-      params.require(:article).permit(:title, :author, :description)
+      params.require(:article).permit(:title, :author, :description, :editor)
     end
 end

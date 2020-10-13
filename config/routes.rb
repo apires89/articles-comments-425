@@ -16,3 +16,8 @@ end
 
 # everytime i create a comment i need an associated article!
 # everytime i create a review i need an associated restaurant!
+
+#show,new,create,destroy
+
+
+ #resources :cocktails #generates 7 routes

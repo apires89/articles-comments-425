@@ -2,6 +2,13 @@
 
 <h1>Articles</h1>
 
+
+
+<%= simple_form_for :index, url: articles_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+  <%= f.input :query  %>
+  <%= f.submit "Search", class: "btn btn-primary" %>
+<% end %>
+
 <table>
   <thead>
     <tr>

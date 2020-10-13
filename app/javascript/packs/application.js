@@ -15,3 +15,17 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import 'bootstrap';
+
+import flatpickr from "flatpickr";
+
+    document.addEventListener('turbolinks:load', () => {
+      // Call your functions here, e.g:
+      // initSelect2();
+      flatpickr(".datepicker1")
+
+
+    });
+
+
+

@@ -26,6 +26,19 @@
     <%= form.text_field :description %>
   </div>
 
+  <div class="field">
+    <%= form.label :editor %>
+    <%= form.text_field :editor%>
+  </div>
+
+
+  <div class="field">
+    <%= form.label :published %>
+    <%= form.text_field :published, class: "datepicker1" %>
+  </div>
+
+   <%= form.hidden_field :secret, :value => "Hello from Hidden field" %>
+   <%= form.hidden_field :stuff, :value => "Hello from stuff" %>
   <div class="actions">
     <%= form.submit %>
   </div>
